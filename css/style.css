@@ -185,7 +185,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--ColorPaleBlue);
-  scale: 0.7;
+  scale: 0.5;
 }
 .main_container__footer__social_links__list__item:hover {
   background: rgb(78, 127, 251, 0.5);

@@ -29,13 +29,19 @@ Users should be able to:
 
 - Mobile view
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![Mobile view](/images/Screenshot_mobile.png)
+![Mobile view state one](/images/Screenshot_mobile_state_one.png)
+![Mobile view state two](/images/Screenshot_mobile_state_two.png)
+![Mobile view state three](/images/Screenshot_mobile_state_three.png)
+![Mobile view state four](/images/Screenshot_mobile_state_four.png)
 
 - Desktop view
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![Desktop view](./images/Screenshot_desktop.png)
+![Desktop view state one](./images/Screenshot_desktop_state_one.png)
+![Desktop view state two](./images/Screenshot_desktop_state_two.png)
+![Desktop view state three](./images/Screenshot_desktop_state_three.png)
+![Desktop view state four](./images/Screenshot_desktop_state_four.png)
 
 ### Links
 

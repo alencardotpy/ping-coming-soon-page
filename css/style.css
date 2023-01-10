@@ -173,7 +173,7 @@ body {
 .main_container__footer__social_links__list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 0px;
   padding:0;
   align-content: center;
   align-items: center;

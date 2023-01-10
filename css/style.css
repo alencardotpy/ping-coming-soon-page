@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*
+## Layout
+
+The designs were created to the following widths:
+*/
+  --WidthMobile: 375px;
+  --WidthDesktop: 1440px;
+  /*
+## Colors
+
+### Primary
+*/
+  --ColorBlue: hsl(223, 87%, 63%);
+  /*
+### Secondary
+*/
+
+  --ColorPaleBlue: hsl(223, 100%, 88%);
+  --ColorLightRed: hsl(354, 100%, 66%);
+  /*
+### Neutral
+*/
+  --ColorGray: hsl(0, 0%, 59%);
+  --ColorVeryDarkBlue: hsl(209, 33%, 12%);
+  /*
+## Typography
+
+### Body Copy
+*/
+  --FontSize: 20px;
+  /*
+### Fonts
+*/
+  --FontFamily: "Libre Franklin", sans-serif;
+  --FontWeightLight: 300;
+  --FontWeightSemiBold: 600;
+  --FontWeightBold: 700;
+  /*
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+}
+
+body {
+  max-width: var(--WidthMobile);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  font-family: var(--FontFamily);
+  padding: 10px 20px;
+}
+.logo_container {
+  width: 350px;
+  height: 80px;
+  margin: 30px auto 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.logo_container__image {
+  width: 80px;
+  margin: 0 auto;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main_container__title_container__text {
+  font-weight: var(--FontWeightLight);
+  color: var(--ColorGray);
+  font-size: 1.7rem;
+  text-align: center;
+}
+.main_container__title_container__text-strong {
+  color: var(--ColorVeryDarkBlue);
+}
+.main_container__description_container {
+  margin: 10px auto 30px auto;
+}
+.main_container__description_container__text {
+  font-weight: var(--FontWeightLight);
+  font-size: 1.2rem;
+  color: var(--ColorVeryDarkBlue);
+}
+.main_container__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 40px auto;
+}
+.main_container__form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 15px;
+}
+.main_container__form__fieldset__input {
+  width: 350px;
+  height: 45px;
+  padding-left: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--ColorPaleBlue);
+  color: var(--ColorVeryDarkBlue);
+  font-family: var(--FontFamily);
+  font-weight: var(--FontWeightSemiBold);
+}
+.main_container__form__fieldset__input::placeholder {
+  color: var(--ColorPaleBlue);
+}
+.main_container__form__fieldset__input:focus {
+  outline: 1px solid var(--ColorBlue);
+}
+.main_container__form__fieldset__error_text {
+  margin: -10px 0 0 15px;
+  color: var(--ColorLightRed);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: var(--FontWeightSemiBold);
+  font-style: italic;
+  display: none;
+}
+.main_container__form__fieldset__button {
+  background-color: var(--ColorBlue);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 7px 0 var(--ColorPaleBlue);
+}
+.main_container__form__fieldset__button:hover {
+  background-color: var(--ColorPaleBlue);
+  color: var(--ColorBlue);
+}
+.main_container__image_container {
+  max-width: var(--WidthMobile);
+  margin-bottom: 200px;
+}
+.main_container__image_container__image {
+  width: 100%;
+}
+.main_container__footer {
+  width: 350px;
+  margin: 0 auto;
+}
+.main_container__footer__social_links {
+  height: 80px;
+}
+.main_container__footer__social_links__list {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.main_container__footer__social_links__list__item {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ColorPaleBlue);
+  scale: 0.7;
+}
+.main_container__footer__social_links__list__item:hover {
+  background: rgb(78, 127, 251, 0.5);
+}
+.main_container__footer__social_links__list__item__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.main_container__footer__social_links__list__item__link__image {
+  width: 25px;
+  height: auto;
+}
+.main_container__footer__text {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--ColorGray);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 700px;
+    min-height: 100vh;
+  }
+
+  .logo_container__image {
+    width: 70px;
+  }
+  .main_container {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "description"
+      "form"
+      "illustration";
+    margin: 0 auto;
+    width: 500px;
+  }
+  .main_container__title_container {
+    grid-area: title;
+  }
+  .main_container__title_container__text {
+    font-weight: var(--FontWeightLight);
+    color: var(--ColorGray);
+    font-size: 2rem;
+  }
+
+  .main_container__description_container {
+    grid-area: description;
+  }
+  .main_container__description_container__text {
+    font-size: 1rem;
+  }
+
+  .main_container__form {
+    grid-area: form;
+  }
+  .main_container__form__fieldset {
+    width:300px;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .main_container__form__fieldset__input {
+    width: 320px;
+    
+  }
+
+  .main_container__form__fieldset__error_text {
+    font-size: 0.58rem;
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .main_container__form__fieldset__button {
+    width: 150px;
+  }
+  .main_container__form__fieldset__button:active {
+    background-color: var(--ColorBlue);
+    color: #fff;
+  }
+  .main_container__image_container {
+    grid-area: illustration;
+    max-width: 700px;
+    margin-bottom: 130px;
+  }
+}
+/* Frontend Mentor Attribution*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--ColorBlue);
+  text-decoration: none;
+}

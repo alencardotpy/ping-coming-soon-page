@@ -17,7 +17,7 @@ The designs were created to the following widths:
 
 ### Primary
 */
-  -colorblue: hsl(223, 87%, 63%);
+  --ColorBlue: hsl(223, 87%, 63%);
   /*
 ### Secondary
 */
@@ -53,6 +53,157 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 */
 }
 
+body {
+  max-width: var(--WidthMobile);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  font-family: var(--FontFamily);
+  padding: 10px 20px;
+}
+.logo_container {
+  height: 80px;
+  margin-top: 40px;
+}
+.logo_container__image {
+  width: 80px;
+  margin: 0 auto;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+}
+.main_container__title_container__text {
+  font-weight: var(--FontWeightLight);
+  color: var(--ColorGray);
+  font-size: 1.7rem;
+  text-align: center;
+}
+.main_container__title_container__text-strong {
+  color: var(--ColorVeryDarkBlue);
+}
+.main_container__description_container {
+  margin: 10px auto 30px auto;
+}
+.main_container__description_container__text {
+  font-weight: var(--FontWeightLight);
+  font-size: 1.2rem;
+  color: var(--ColorVeryDarkBlue);
+}
+.main_container__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 40px auto;
+}
+.main_container__form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 15px;
+}
+.main_container__form__fieldset__input {
+  width: 350px;
+  height: 45px;
+  padding-left: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--ColorPaleBlue);
+  color: var(--ColorVeryDarkBlue);
+  font-family: var(--FontFamily);
+  font-weight: var(--FontWeightSemiBold);
+}
+.main_container__form__fieldset__input::placeholder {
+  color: var(--ColorPaleBlue);
+}
+.main_container__form__fieldset__input:focus {
+  outline: 1px solid var(--ColorBlue);
+}
+.main_container__form__fieldset__error_text {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  color: var(--ColorLightRed);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: var(--FontWeightSemiBold);
+  font-style: italic;
+  display: none;
+}
+.main_container__form__fieldset__button {
+  background-color: var(--ColorBlue);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 7px 0 var(--ColorPaleBlue);
+}
+.main_container__form__fieldset__button:hover {
+  background-color: var(--ColorPaleBlue);
+  color: var(--ColorBlue);
+}
+.main_container__image_container {
+  max-width: var(--WidthMobile);
+  margin-bottom: 200px;
+}
+.main_container__image_container__image {
+  width: 100%;
+}
+.main_container__footer {
+  width: 350px;
+  margin: 0 auto;
+}
+.main_container__footer__social_links {
+  height: 80px;
+}
+.main_container__footer__social_links__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding:0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.main_container__footer__social_links__list__item {
+
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ColorPaleBlue);
+  scale: 0.7;
+}
+.main_container__footer__social_links__list__item:hover {
+  background:rgb(78, 127, 251,0.5);
+}
+.main_container__footer__social_links__list__item__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width:auto;
+  height:auto;
+}
+.main_container__footer__social_links__list__item__link__image {
+  width: 25px;
+  height:auto;
+}
+
+.main_container__footer__text{
+  font-size: 1rem;
+  text-align: center;
+  color:var(--ColorGray);
+  margin-bottom: 30px;
+}
 /* Frontend Mentor Attribution*/
 .attribution {
   font-size: 11px;

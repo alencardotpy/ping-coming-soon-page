@@ -18,16 +18,102 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <header class="logo_container">
+      <img
+        src="./images/logo.svg"
+        alt="company logo"
+        class="logo_container__image"
+      />
+    </header>
+    <main class="main_container">
+      <div class="main_container__title_container">
+        <h1 class="main_container__title_container__text">
+          We are launching
+          <strong class="main_container__title_container__text-strong"
+            >soon!</strong
+          >
+        </h1>
+      </div>
+      <div class="main_container__description_container">
+        <p class="main_container__description_container__text">
+          Subscribe and get notified
+        </p>
+      </div>
+      <form action="#email" class="main_container__form" novalidate>
+        <fieldset class="main_container__form__fieldset">
+          <input
+            id="email"
+            type="email"
+            class="main_container__form__fieldset__input"
+            placeholder="Your email address..."
+            required
+          />
+          <p id="emailError" class="main_container__form__fieldset__error_text">
+            Please provide a valid email address
+          </p>
+          <input
+            class="main_container__form__fieldset__button"
+            type="button"
+            value="Notify Me"
+          />
+        </fieldset>
+      </form>
+      <div class="main_container__image_container">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Web page illustration"
+          class="main_container__image_container__image"
+        />
+      </div>
+    </main>
 
-    <footer>
+    <footer class="main_container__footer">
+      <div class="main_container__footer__social_links">
+        <ul class="main_container__footer__social_links__list">
+          <li class="main_container__footer__social_links__list__item">
+            <a
+              class="main_container__footer__social_links__list__item__link"
+              href="#"
+              ><img
+                class="main_container__footer__social_links__list__item__link__image"
+                src="./images/facebook.svg"
+                alt="Facebook logo"
+            /></a>
+          </li>
+          <li class="main_container__footer__social_links__list__item">
+            <a
+              class="main_container__footer__social_links__list__item__link"
+              href="#"
+              ><img
+                class="main_container__footer__social_links__list__item__link__image"
+                src="./images/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+          </li>
+          <li class="main_container__footer__social_links__list__item">
+            <a
+              class="main_container__footer__social_links__list__item__link"
+              href="#"
+              ><img
+                class="main_container__footer__social_links__list__item__link__image"
+                src="./images/instagram.svg"
+                alt="Instagram logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_container__footer__text">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+    </footer>
+
+    <div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="https://github.com/alencardotpy">AlencarDotPy</a>.
       </p>
-    </footer>
+    </div>
   </body>
 </html>
